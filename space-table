@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> Sapce Information Table </title>
+  </head>
+
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a href="index">Go back to first page</a>
+        <a href="second-page">Go to Second Page</a>
+      </li>
+    </ul>
+  </nav>
+
+  
