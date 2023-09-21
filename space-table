@@ -8,26 +8,26 @@
     <link rel="stylesheet" href="./table.css" />
   </head>
 
-<body>
-  <nav>
-    <ul>
-      <li>
-        <a href="index">Go back to first page</a>
-        <a href="second-page">Go to Second Page</a>
-      </li>
-    </ul>
-  </nav>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="index">Go back to first page</a>
+          <a href="second-page">Go to Second Page</a>
+        </li>
+      </ul>
+    </nav>
 
-  <table style="border-collapse: collapse;">
-    <caption><i>Table 1:</i>&nbsp;This is the table caption.</caption>
-    <thead>
-      <tr>
-        <td></td>
-        <th>Gee, this column has a long name</th>
-        <th><u>Col 2</u></th>
-        <th>Col 3</th> 
-        <th>Col 4</th>
-      </tr>
+    <table style="border-collapse: collapse;">
+      <caption><i>Table 1:</i>&nbsp;This is the table caption.</caption>
+      <thead>
+        <tr>
+          <td></td>
+          <th>Gee, this column has a long name</th>
+          <th><u>Col 2</u></th>
+          <th>Col 3</th> 
+          <th>Col 4</th>
+        </tr>
       </thead>
       <tbody>
         <tr>
