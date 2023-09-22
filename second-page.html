@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <nav> <!-- Corrected 'na' to 'nav' -->
+    <nav> 
         <ul style="list-style-type: none;">
             <li>
                 <a href="index.html">Go back to first page</a>
@@ -39,17 +39,15 @@
 
     <figure>
         <img src="my-cube.png" alt="My Cube" width="900" height="300" />
-        <figcaption><i>Figure 1</i>: This is my favorite Rubik's cube. It is a 3x3 magnetic cube that allows you to adjust
+        <figcaption><i>Magnetic cube</i>: This is my favorite Rubik's cube. It is a 3x3 magnetic cube that allows you to adjust
             the tension. This makes it a speed cube, and my fastest time not recorded was 57 seconds, and 1 minute 13
             seconds recorded. I am not a savant or anything... You all can look up how to do it, and if you buy a good
             cube, it will most likely give you solutions.</figcaption>
     </figure>
 
-    <!-- Dark Mode Toggle Button -->
     <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
 
     <script>
-        // JavaScript function to toggle dark mode
         function toggleDarkMode() {
             const body = document.body;
             body.classList.toggle('dark-mode');
