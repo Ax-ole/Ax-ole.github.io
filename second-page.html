@@ -1,54 +1,60 @@
 <!DOCTYPE html>
 <html lang="en-CA">
 
-	<head>
-		<title> Ax-Oles second page </title>
+<head>
+    <title>Ax-Oles second page</title>
 
-		<style>
-        
-        	body {
-            		background-color: #ffffff;
-            		color: #000000;
-      	 	 }
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #000000;
+        }
 
-        
-       	 	body.dark-mode {
-            		background-color: #222222;
-            		color: #ffffff;
-          	}
+        body.dark-mode {
+            background-color: #222222;
+            color: #ffffff;
+        }
 
-        
-        	.dark-mode-toggle {
-           	 	position: fixed;
-            		top: 10px;
-            		right: 10px;
-          	}
-   	 	</style>
-	
-	</head>
-		
-	<body>
-		<na>
-			<ul style="list-style-type: none;">
-				<li>
-					<a href="index">Go back to first page</a>
-				</li>
-				<li>
-					<a href="space-table">Go to Space Info</a>
-				</li>
-			</ul>
-		</na>
+        .dark-mode-toggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
 
-	<h1>One of my favourite game or toy...</h1>
-		
-	<figure>
-		<img src="my-cube.png" alt="My Cube" width="900" height="300" />
-		<figurecaption><i>Figure 1</i>: This is my favourite Rubick's cube. It is a 3x3 magnetic cube that allows you to adjust the tension.
-			This makes it a speed cube and my fastest time not recorder was 57 seconds and 1 minute 13 seconds recorded.
-			I am not a savant or anything... You all can look up how to do it and if you buy a good cube it will most
-			likely give you solutions.</figurecaption>
-	</figure>	
-		
-	
-	</body>
+<body>
+    <nav> <!-- Corrected 'na' to 'nav' -->
+        <ul style="list-style-type: none;">
+            <li>
+                <a href="index.html">Go back to first page</a>
+            </li>
+            <li>
+                <a href="space-table.html">Go to Space Info</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1>One of my favorite game or toy...</h1>
+
+    <figure>
+        <img src="my-cube.png" alt="My Cube" width="900" height="300" />
+        <figcaption><i>Figure 1</i>: This is my favorite Rubik's cube. It is a 3x3 magnetic cube that allows you to adjust
+            the tension. This makes it a speed cube, and my fastest time not recorded was 57 seconds, and 1 minute 13
+            seconds recorded. I am not a savant or anything... You all can look up how to do it, and if you buy a good
+            cube, it will most likely give you solutions.</figcaption>
+    </figure>
+
+    <!-- Dark Mode Toggle Button -->
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+    <script>
+        // JavaScript function to toggle dark mode
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+
 </html>
