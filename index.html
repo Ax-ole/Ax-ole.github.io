@@ -71,13 +71,11 @@
     </ol>
 
     <script>
-        // Function to toggle dark mode
         function toggleDarkMode() {
             const body = document.body;
             body.classList.toggle('dark-mode');
         }
 
-        // Function to update the current date
         function updateDate() {
             const currentDateElement = document.getElementById('current-date');
             const currentDate = new Date();
@@ -85,7 +83,6 @@
             currentDateElement.textContent = 'Today is ' + formattedDate;
         }
 
-        // Automatically update the date when the page loads
         window.onload = updateDate;
     </script>
 </body>
