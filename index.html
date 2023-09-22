@@ -1,54 +1,90 @@
 <!DOCTYPE html>
 <html lang="en-CA">
-	<head>
-		<title> Ax-Oles 1st webpage </title>	
-	</head>
-		
-	<body>
-		<nav>
-			<ul>
-				<li>
-					<a href="second-page">Go to Second Page</a>
-					<a href="space-table">Go to Space Info</a>
-				</li>
-			</ul>
-		</nav>
+<head>
+    <title>Ax-Oles 1st webpage</title>
+    <style>
+        /* Default light mode styles */
+        body {
+            background-color: #ffffff;
+            color: #000000;
+        }
 
-		
-		
-		<p1>About me.. who is me? Me is not you and that is fact... or is it?? hmmm</p1>
-	</br>
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #222222;
+            color: #ffffff;
+        }
 
-		<p3>		I am kind of boring to be honest. I am a father to two beautiful and intelegent little humans and that alone takes up some good time.
-			Other than that I love being creative and taking on any project even if I do not always finish, I sure like starting them. Video games and 
-			puzzles are always fun but not the puzzle peice puzzles, I like Rubick's and intricate ones like that. Also my spelling is not always the 
-			best as I was born speaking French... well, was born and then lived a bit and then learnt a language and that one was French and then English 
-			when kindergaten started. That is about it for now! See ya and thank you for reading this and finding your way to my first webpage hehe. 
-		
-		</p3>
-	</br>
-		
-		<h1>Some games I like and would love if it could stay for now :D</h1>
-		<ul>
-			<li><a href="https://zty.pe">ZType Game</a></li>
-			<li><a href="https://eatkin.itch.io/a-relaxing-typing-game">Relaxing Typing Game</a></li>
-			<li><a href="https://neal.fun">Neal's Fun game webpage</a></li>
-		</ul>
-		
-		<ol>
-			<li>If you are on here... Welcome!</li>
-			<li>Remember to be nice.</li>
-			<li>If at first you don't succeed... try at least once more :D</li>
-		</ol>
-		
-		<p1>Some information for school purposes:</p1>
-		
-		<ol>
-			
-			<li> Axel L.D L. </li>
-			<li>Today is September 19th, 2023</li>
-		
-		</ol>
-		
-	</body>
+        /* Dark mode toggle button styles */
+        .dark-mode-toggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Dark mode toggle button -->
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="second-page">Go to Second Page</a>
+                <a href="space-table">Go to Space Info</a>
+            </li>
+        </ul>
+    </nav>
+
+    <p1>About me.. who is me? Me is not you and that is fact... or is it?? hmmm</p1>
+    </br>
+
+    <p3>I am kind of boring to be honest. I am a father to two beautiful and intelligent little humans and that alone takes up some good time.
+        Other than that I love being creative and taking on any project even if I do not always finish, I sure like starting them. Video games and
+        puzzles are always fun but not the puzzle piece puzzles, I like Rubik's and intricate ones like that. Also my spelling is not always the
+        best as I was born speaking French... well, was born and then lived a bit and then learned a language and that one was French and then English
+        when kindergarten started. That is about it for now! See ya and thank you for reading this and finding your way to my first webpage hehe.
+    </p3>
+    </br>
+
+    <h1>Some games I like and would love if it could stay for now :D</h1>
+    <ul>
+        <li><a href="https://zty.pe">ZType Game</a></li>
+        <li><a href="https://eatkin.itch.io/a-relaxing-typing-game">Relaxing Typing Game</a></li>
+        <li><a href="https://neal.fun">Neal's Fun game webpage</a></li>
+    </ul>
+
+    <ol>
+        <li>If you are on here... Welcome!</li>
+        <li>Remember to be nice.</li>
+        <li>If at first you don't succeed... try at least once more :D</li>
+    </ol>
+
+    <p1>Some information for school purposes:</p1>
+
+    <ol>
+        <li> Axel L.D L. </li>
+        <li id="current-date">Today is September 19th, 2023</li>
+    </ol>
+
+    <script>
+        // Function to toggle dark mode
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+        }
+
+        // Function to update the current date
+        function updateDate() {
+            const currentDateElement = document.getElementById('current-date');
+            const currentDate = new Date();
+            const formattedDate = currentDate.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+            currentDateElement.textContent = 'Today is ' + formattedDate;
+        }
+
+        // Automatically update the date when the page loads
+        window.onload = updateDate;
+    </script>
+</body>
 </html>
