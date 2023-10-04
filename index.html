@@ -23,10 +23,6 @@
         }
     </style>
    
-    function togglesecondpage() {
-        console.log('Second page button clicked');
-    }
-
 </head>
 
 <body>
@@ -34,45 +30,7 @@
         <h1>Trying something out!</h1>
     </header>
     <main>
-        <article>
-                <nav>
-                    <button>Second page</button>
-                    <button class="second-page-toggle" onclick="togglesecondpage()">Toggle Second Page</button>
-                         <a href="second-page">Go to Second Page</a>
-                    <button>Button 2</button>
-                     <ul style="list-style-type: none;">
-                        <li>
-                            <a href="second-page">Go to Second Page</a>
-     
-                        </li>
-                        <li>
-                            <a href="space-table">Go to Space Info</a>
-                        </li>
-                    </ul>
-                </nav>
-                
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar tellus id euismod mollis.
-                        Cras
-                        nec tortor nec elit placerat ornare in quis risus. Sed vehicula eu ipsum gravida tempus. Cras tempor
-                        nisl
-                        quis orci rutrum congue. Praesent sit amet eros purus. Aliquam posuere nunc dolor, nec pulvinar urna
-                        luctus id. Nullam euismod accumsan tortor. Etiam quis sapien interdum sem tristique malesuada at a
-                        erat.
-                    </p>
-                </div>
-                <div>
-                    <p>
-                        Curabitur rhoncus sed risus in viverra. Donec tincidunt dignissim enim. Aliquam quis quam iaculis,
-                        elementum eros sit amet, porttitor nunc. Maecenas gravida rutrum vehicula. Praesent lobortis rhoncus
-                        sem,
-                        quis viverra diam consequat non. Morbi feugiat pulvinar metus sed mollis. Class aptent taciti
-                        sociosqu ad
-                        litora torquent per conubia nostra, per inceptos himenaeos. Nam mollis luctus auctor. </p>
-                </div>
-
-
-            </article>
+        
     </main>
     <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
     <button href="Second-Page" onclick="SecondPage()">Second Page</button>
@@ -81,6 +39,7 @@
         <ul style="list-style-type: none;">
             <li>
                 <a href="second-page">Go to Second Page</a>
+                    <button href="Second-Page" onclick="SecondPage()">Second Page</button>
      
             </li>
             <li>
