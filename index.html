@@ -37,12 +37,11 @@
    <nav>
         <ul style="list-style-type: none;">
             <li>
-                <a href="second-page">Go to Second Page</a>
 				<button onclick="secondpage()">Second Page</button>
      
             </li>
-            <li>
-                <a href="space-table">Go to Space Info</a>
+            <li
+				<button onclick="space-table()">Space information</button>
             </li>
         </ul>
     </nav>
@@ -94,6 +93,11 @@
         function secondpage() {
             window.location.href= 'second-page.html';
         }
+		
+		function space-table() {
+            window.location.href= 'space-table.html';
+        }
+
 
         window.onload = updateDate;
     </script>
