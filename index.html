@@ -39,7 +39,7 @@
         <ul style="list-style-type: none;">
             <li>
                 <a href="second-page">Go to Second Page</a>
-                    <button href="Second-Page" onclick="SecondPage()">Second Page</button>
+                    <button onclick="SecondPage()">Second Page</button>
      
             </li>
             <li>
@@ -90,6 +90,10 @@
             const currentDate = new Date();
             const formattedDate = currentDate.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
             currentDateElement.textContent = 'Today is ' + formattedDate;
+        }
+
+        function secondPage() {
+            console.log("clicked");
         }
 
         window.onload = updateDate;
