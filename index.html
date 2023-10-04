@@ -33,13 +33,12 @@
         
     </main>
     <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-    <button href="Second-Page" onclick="secondPage()">Second Page</button>
-
-    <nav>
+   
+   <nav>
         <ul style="list-style-type: none;">
             <li>
                 <a href="second-page">Go to Second Page</a>
-                    <button onclick="SecondPage()">Second Page</button>
+				<button onclick="secondpage()">Second Page</button>
      
             </li>
             <li>
@@ -92,8 +91,8 @@
             currentDateElement.textContent = 'Today is ' + formattedDate;
         }
 
-        function secondPage() {
-            console.log("clicked");
+        function secondpage() {
+            window.location.href= 'second-page.html';
         }
 
         window.onload = updateDate;
