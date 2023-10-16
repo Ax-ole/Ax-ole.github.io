@@ -1,52 +1,84 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Making my grid</title>
     <style>
-      body {
-        width: 90%;
-        max-width: 1000px;
-        margin: 2em auto;
-        font: .9em/1.2 Arial, Helvetica, sans-serif;
-      }
+        body {
+            width: 90%;
+            max-width: 1000px;
+            margin: 2em auto;
+            font: .9em/1.2 Arial, Helvetica, sans-serif;
+        }
 
-      .container>div {
-        border-radius: 5px;
-        padding: 10px;
-        background-color: pink;
-        border: 2px solid green;
-      }
+        .container>div {
+            border-radius: 5px;
+            padding: 10px;
+            background-color: pink;
+            border: 2px solid green;
+        }
 
-      .container {
-        display: grid;
-        grid-template-areas:
-          "header header . header"
-          "sidebar content sidebar content"
-          "footer footer . footer";
-          "row row . row";
-        grid-template-columns: 1fr 2fr 4fr 1fr;
-        grid-row: 4 / 4 
-        gap: 10px;
-      }
-    
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header . header"
+                "sidebar content sidebar content"
+                "footer footer . footer"
+                "row row . row"; /* Define an additional row for the new grid */
+            grid-template-columns: 1fr 2fr 4fr 1fr;
+            grid-gap: 10px;
+        }
+
+        /* Styles for the first grid layout */
+        .box {
+            background-color: lightblue;
+            grid-area: header; /* Place this box in the header area */
+        }
+
+        .rectangle {
+            background-color: lightgreen;
+            grid-area: sidebar; /* Place this box in the sidebar area */
+        }
+
+        .block {
+            background-color: lightcoral;
+            width: 100px;
+            height: 100px;
+            grid-area: content; /* Place these boxes in the content area */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-template-rows: repeat(4, 100px);
+            gap: 10px;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <h1>Trying to make a grid!</h1>
     <div class="container">
-      <div>What would you eat in the desert?</div>
-      <div>Two</div>
-      <div>Three</div>
-      <div>I have no idea what I'm doing!</div>
-      <div>Five</div>
-      <div>Six</div>
-      <div>Seven</div>
-      <div>My last box</div>
+        <div class="box"></div>
+        <div class="rectangle"></div>
+        <div class="grid-container">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="box"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div>My last box</div>
     </div>
-  </body>
+</body>
 
 </html>
