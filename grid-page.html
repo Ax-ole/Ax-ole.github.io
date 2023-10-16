@@ -16,8 +16,8 @@
       .container>div {
         border-radius: 5px;
         padding: 10px;
-        background-color: blue;
-        border: 2px solid violet;
+        background-color: pink;
+        border: 2px solid green;
       }
 
       .container {
@@ -27,8 +27,9 @@
           "sidebar content sidebar content"
           "footer footer . footer";
           "row row . row";
-        grid-template-columns: 1fr 2fr 3fr;
-        gap: 15px;
+        grid-template-columns: 1fr 2fr 3fr . 2fr;
+        grid-row: 2 / 4 
+        gap: 10px;
       }
     
     </style>
