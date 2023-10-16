@@ -7,15 +7,15 @@
     <title>Making my grid</title>
     <style>
       body {
-        width: 90%;
+        width: 45%;
         max-width: 1000px;
-        margin: 2em auto;
+        margin: 10em auto;
         font: .9em/1.2 Arial, Helvetica, sans-serif;
       }
 
       .container>div {
-        border-radius: 5px;
-        padding: 10px;
+        border-radius: 2px;
+        padding: 4px;
         background-color: pink;
         border: 2px solid green;
       }
@@ -23,21 +23,13 @@
       .container {
         display: grid;
         grid-template-areas:
-          "header header . header"
-          "sidebar content sidebar content"
-          "footer footer . footer";
-          "row row . row";
-        grid-template-columns: 1fr 2fr 4fr 1fr 3fr;
-        grid-row: 4 / 4 / 4
+          "header";
+          "sidebar";
+          "footer";
+          "row";
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr 1fr;
         gap: 10px;
-      }
-    
-      .container {
-        display: rectangle;
-        grid-template-areas:
-          "block / block"
-        grid-template-row: 2fr 3fr 1fr 4fr;
-        gap: 20px;
       }
 
     </style>
