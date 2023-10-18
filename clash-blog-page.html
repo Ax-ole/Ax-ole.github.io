@@ -63,15 +63,7 @@
     	      line-height: 1.5;
       }
 
-      function updateDate() {
-            const currentDateElement = document.getElementById('current-date');
-            const currentDate = new Date();
-            const formattedDate = currentDate.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
-            currentDateElement.textContent = 'Today is ' + formattedDate;
-      }  
-
-
-      updateDate()
+     
 
 	    
     </style>
@@ -93,6 +85,23 @@
 		      
       </nav>
       
+	    
+      <script>
+
+ 	function updateDate() {
+            const currentDateElement = document.getElementById('current-date');
+            const currentDate = new Date();
+            const formattedDate = currentDate.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+            currentDateElement.textContent = 'Today is ' + formattedDate;
+      }  
+
+
+      updateDate;
+
+	      
+      </script>
+      
+	    
       <header>My Clash Wiki blog!</header>
       <article>
         <h1>Clash Royale</h1>
